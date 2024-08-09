@@ -1,0 +1,278 @@
+.logo{
+	height: 50px;
+	width: 70px;
+}
+.logocont{
+	margin-right: 210px;
+	
+}
+.flag{
+	height:30px;
+	width: 40px;
+	margin-top: 6px;
+}
+.default{
+	height: 40px;
+	width: 40px;
+	
+}
+.cart{
+	height: 30px;
+	width: 30px;
+}
+.nav1 .cart{
+	position: relative;
+}
+span{
+	display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 47%;
+  right: 70px;
+}
+
+.nav2{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.space{
+	margin-left: 70px;
+}
+.search{
+	margin-right: 35px;
+}
+.salecont{
+	text-align: center;
+}
+.sale{
+	color: red;
+	font-size: 20px;
+	text-decoration: none;
+	margin-bottom: 30px;
+}
+.sale:hover{
+	color:red
+}
+.imgcont{
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	display: flex;
+}
+.img1{
+	/* background: red; */
+	width: 70%;
+	height: 600px;
+	/* padding: 5 10 px; */
+
+}
+.mainimg{
+	height: 610px;
+  width: 100% ;
+  padding: 20px 5px;
+}
+.img2{
+	/* background-color: blue; */
+	padding: 10px 2px;
+	height: 600px;
+	width: 30%;
+	/* display: flex; */
+}
+.sec1{
+	/* background: yellow; */
+	height: 50%;
+	width: 100%;
+}
+.sec2{
+	width: 100%;
+	height: 50%;
+	/* background: rgb(255, 0, 166); */
+}
+.simg{
+	width: 100%;
+	height: 300px;
+	padding: 10px 5px;
+}
+.arrival{
+	width: 98%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	align-items: center;
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+.view{
+	/* margin-left:75%; */
+	font-size: larger;
+	padding-right: 15px;
+}
+.heading{
+	padding-left: 15px;
+	font-size: xx-large;
+	font-weight: bolder;
+}
+.shoes{
+	width: 95%;
+	margin: auto;
+	display: flex;
+	gap: 15px;
+	margin-bottom: 50px;
+}
+.sideimg{
+	transition: opacity 0.3s ease-in-out;
+}
+.card:hover .sideimg {
+    content: url('image/s1side.webp'); /* Change image on hover */
+}
+/* General Footer Styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	margin-top: 70px;
+	text-align: center;
+  }
+  
+  .footer-container {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	justify-content: space-around;
+  }
+  
+  .footer-section {
+	flex: 1;
+	padding: 10px;
+	min-width: 200px;
+  }
+  
+  .footer-section h2 {
+	border-bottom: 2px solid #fff;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+	margin: 5px 0;
+  }
+  
+  .footer-section a {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+	text-decoration: underline;
+  }
+  
+  .social-media a {
+	display: inline-block;
+	margin: 0 10px;
+  }
+  
+  .social-media img {
+	width: 24px;
+	height: 24px;
+  }
+  
+  form input[type="email"] {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	margin-right: 5px;
+  }
+  
+  form button {
+	padding: 10px 15px;
+	border: none;
+	background-color: #555;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  form button:hover {
+	background-color: #777;
+  }
+  
+
+
+  /* login form  */
+  /* General Styles for Login Form */
+
+  
+  
+  .login-container {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 300px;
+	/* width: 60%; */
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+
+  }
+  
+  .login-container h2 {
+	margin-top: 0;
+  }
+  
+  .form-group {
+	margin-bottom: 15px;
+  }
+  
+  .form-group label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
+  
+  .form-group input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+  
+  button {
+	width: 100%;
+	padding: 10px;
+	background-color: #007bff;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #0056b3;
+  }
+  
+  .form-footer {
+	margin-top: 15px;
+	text-align: center;
+  }
+  
+  .form-footer a {
+	color: #007bff;
+	text-decoration: none;
+  }
+  
+  .form-footer a:hover {
+	text-decoration: underline;
+  }
+  
