@@ -1,9 +1,12 @@
+body{
+	background: black;
+}
 .logo{
 	height: 50px;
 	width: 70px;
 }
 .logocont{
-	margin-right: 210px;
+	margin-right: 164px;
 	
 }
 .flag{
@@ -12,9 +15,12 @@
 	margin-top: 6px;
 }
 .default{
-	height: 40px;
-	width: 40px;
-	
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  height: 35px;
+  width: 55px;
 }
 .cart{
 	height: 30px;
@@ -113,6 +119,11 @@ span{
 	/* margin-left:75%; */
 	font-size: larger;
 	padding-right: 15px;
+	color:black;
+	cursor: pointer;
+}
+.view-all-btn:hover {
+	background-color: #0056b3;
 }
 .heading{
 	padding-left: 15px;
@@ -125,6 +136,10 @@ span{
 	display: flex;
 	gap: 15px;
 	margin-bottom: 50px;
+}
+#hiddenContent{
+	display: none;
+
 }
 .sideimg{
 	transition: opacity 0.3s ease-in-out;
@@ -212,7 +227,7 @@ footer {
   
   
   .login-container {
-	background-color: #fff;
+	background-color: #ffffff;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	padding: 20px;
@@ -275,4 +290,114 @@ footer {
   .form-footer a:hover {
 	text-decoration: underline;
   }
-  
+  button {
+    cursor: pointer;
+}
+
+/* Main button to open the modal */
+
+
+#openModalBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+
+
+.size-selector {
+    margin-bottom: 20px;
+}
+
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.size-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.size-btn:hover {
+    background-color: #0056b3;
+}
+
+.size-btn.active {
+    background-color: #28a745;
+}
+
+.selected-size {
+    text-align: center;
+}
+
+#addToCartBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addToCartBtn:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+#addToCartBtn:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.go-back {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#goBackBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#goBackBtn:hover {
+    background-color: #c82333;
+}
