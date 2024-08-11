@@ -61,7 +61,7 @@ echo'<!doctype html>
                         <a href="cart.php">
 
                             <img class="cart" src="image/cart.png" alt="hii">
-                            <span>0</span>
+                            
                         </a>
                     </div>
                 </div>
@@ -84,25 +84,25 @@ echo'<!doctype html>
 
                         <div class="space">
                             <li class="nav-item ">
-                                <a class="nav-link active" aria-current="page" href="">New Arrival</a>
+                                <a class="nav-link active" aria-current="page" href="newarrival.php">New Arrival</a>
                             </li>
 
                         </div>
                         <div class="space">
                             <li class="nav-item ">
-                                <a class="nav-link active" aria-current="page" href="#">NIKE</a>
+                                <a class="nav-link active" aria-current="page" href="nike.php">NIKE</a>
                             </li>
 
                         </div>
                         <div class="space">
                             <li class="nav-item ">
-                                <a class="nav-link active" aria-current="page" href="#">ADIDAS</a>
+                                <a class="nav-link active" aria-current="page" href="adidas.php">ADIDAS</a>
                             </li>
 
                         </div>
                         <div class="space">
                             <li class="nav-item ">
-                                <a class="nav-link active" aria-current="page" href="#">blog</a>
+                                <a class="nav-link active" aria-current="page" href="blog.php">blog</a>
                             </li>
 
                         </div>';

@@ -8,7 +8,6 @@ if (isset($_SESSION['loggedin'])) {
 } 
 
 ?>
-
 <!doctype html>
 <html lang="en">
 
@@ -26,34 +25,142 @@ if (isset($_SESSION['loggedin'])) {
 
 <body>
 
-    <?php 
-        if($welcome){
-           echo' <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>welcome  </strong> you are logged in!
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>';
-        }
-    ?>
+   
     <?php require 'nav.php'?>
-    <div class="imgcont">
-        <div class="img1">
-            <a href=""><img class="mainimg" src="image/main.webp" alt=""></a>
-        </div>
-        <div class="img2">
-            <div class="sec1">
-                <a href=""><img class="simg" src="image/img1.webp" alt=""></a>
-            </div>
-            <div class="sec2">
-                <a href=""><img class="simg" src="image/img2.webp" alt=""></a>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="arrival">
-        <h3 class="heading">New Arrivals</h3>
+        <h3 class="heading">NIKE COLLECTION</h3>
         <a class="view">
             <p id="viewAllBtn">View More</p>
         </a>
+    </div>
+    <div class="shoes">
+        <div class="card " style="width: 18rem;">
+            <img src="image/s1.webp" class="card-img-top sideimage" alt="...">
+            <div class="card-body">
+                <p class="card-text">Nike</p>
+                <h5 class="card-title">WMN'S CORTEZ LEATHER </h5>
+                <p class="card-text">₹ 7,495.00</p>
+                <button onclick="addToCart('Nike', 7495, 'image/s1.webp/300x200')">Add to Cart</button>
+                <!-- <a class="btn btn-primary openModalBtn">Add to cart</a> -->
+                
+                
+                <!-- Modal -->
+                <!-- <div id="sizeModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Select Shoe Size</h2>
+                        <div class="size-selector">
+                            <h3>Available Sizes</h3>
+                            <div class="size-options">
+                                <button class="size-btn" data-size="6">6</button>
+                                <button class="size-btn" data-size="7">7</button>
+                                <button class="size-btn" data-size="8">8</button>
+                                <button class="size-btn" data-size="9">9</button>
+                                <button class="size-btn" data-size="10">10</button>
+                            </div>
+                        </div>
+                        <div class="selected-size">
+                            <p id="selectedSize">Selected Size: None</p>
+                            <button id="addToCartBtn" disabled>Add to Cart</button>
+                        </div>
+                        <div class="go-back">
+                            <button id="goBackBtn">Go Back</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="card " style="width: 18rem;">
+            <img src="image/s2.webp" class="card-img-top sideimage" alt="...">
+            <div class="card-body">
+                <p class="card-text">Nike</p>
+                <h5 class="card-title">INTIATOR</h5>
+                <p class="card-text">₹ 6,495.00</p>
+                <!-- <a class="btn btn-primary openModalBtn">Add to cart</a> -->
+                <button onclick="addToCart('Nike', 6495, 'image/s2.webp/300x200')">Add to Cart</button>
+                
+                
+            </div>
+        </div>
+        <div class="card " style="width: 18rem; ">
+            <img src="image/s3.webp" class="card-img-top sideimage" alt="...">
+            <div class="card-body">
+                <p class="card-text">Nike</p>
+                <h5 class="card-title">WMN'S DUNK LOW</h5>
+                <p class="card-text">₹ 8,495.00</p>
+                <button onclick="addToCart('Nike', 7495, 'image/s3.webp/300x200')">Add to Cart</button>
+
+                <!-- <a class="btn btn-primary openModalBtn" >Add to cart</a> -->
+                <!-- <button   class="add-to-cart-btn btn btn-primary" onclick="addToCart('Product 1', 10.00, 'https://via.placeholder.com/300x200')">Add to Cart</button> -->
+
+                
+            </div>
+        </div>
+        <div class="card " style="width: 18rem; transition: opacity 0.3s ease-in-out;">
+            <img src="image/s4.webp" class="card-img-top sideimage" alt="...">
+            <div class="card-body">
+                <p class="card-text">Jordan</p>
+                <h5 class="card-title">AIR JORDAN 13</h5>
+                <p class="card-text">₹ 9,495.00</p>
+                <button onclick="addToCart('Jordan', 9495, 'image/s4.webp/300x200')">Add to Cart</button>
+
+                <!-- <a class="btn btn-primary openModalBtn">Add to cart</a> -->
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="shoes">
+        <div class="card " style="width: 18rem;">
+            <img src="image/s5.webp" class="card-img-top sideimage" alt="...">
+            <div class="card-body">
+                <p class="card-text">Nike</p>
+                <h5 class="card-title">WMN'S CORTEZ LEATHER </h5>
+                <p class="card-text">₹ 11,495.00</p>
+                <!-- <a class="btn btn-primary openModalBtn">Add to cart</a> -->
+                <button onclick="addToCart('Nike', 11495, 'image/s1.webp/300x200')">Add to Cart</button>
+
+                
+
+            </div>
+        </div>
+        <div class="card " style="width: 18rem;">
+            <img src="image/s6.webp" class="card-img-top sideimage" alt="...">
+            <div class="card-body">
+                <p class="card-text">Nike</p>
+                <h5 class="card-title">WHITE INTIATOR</h5>
+                <p class="card-text">₹ 3,495.00</p>
+                <!-- <a class="btn btn-primary openModalBtn">Add to cart</a> -->
+
+                <button onclick="addToCart('Nike', 3495, 'image/s6.webp/300x200')">Add to Cart</button>
+                
+            </div>
+        </div>
+        <div class="card " style="width: 18rem; ">
+            <img src="image/s7.webp" class="card-img-top sideimage" alt="...">
+            <div class="card-body">
+                <p class="card-text">Nike</p>
+                <h5 class="card-title">WMN'S DUNK HIGH</h5>
+                <p class="card-text">₹ 8,955.00</p>
+                <!-- <a class="btn btn-primary openModalBtn">Add to cart</a> -->
+                <button onclick="addToCart('Nike', 8955, 'image/s7.webp/300x200')">Add to Cart</button>
+
+                
+            </div>
+        </div>
+        <div class="card " style="width: 18rem; transition: opacity 0.3s ease-in-out;">
+            <img src="image/s8.webp" class="card-img-top sideimage" alt="...">
+            <div class="card-body">
+                <p class="card-text">Jordan</p>
+                <h5 class="card-title">AIR JORDAN 7</h5>
+                <p class="card-text">₹ 11,495.00</p>
+                <!-- <a class="btn btn-primary openModalBtn">Add to cart</a> -->
+                <button onclick="addToCart('Jordan', 11495, 'image/s8.webp/300x200')">Add to Cart</button>
+                
+            </div>
+        </div>
     </div>
     <div class="shoes">
         <div class="card " style="width: 18rem;">

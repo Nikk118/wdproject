@@ -14,7 +14,9 @@
                         </div>
                         <div class="selected-size">
                             <p id="selectedSize">Selected Size: None</p>
-                            <button id="addToCartBtn" disabled>Add to Cart</button>
+                            <button id="addToCartBtn" disabled >Add to Cart</button>
+                            <!-- <button onclick="addToCart('Product 1', 10.00, 'https://via.placeholder.com/300x200')">Add to Cart</button> -->
+                           
                         </div>
                         <div class="go-back">
                             <button id="goBackBtn">Go Back</button>
@@ -53,7 +55,9 @@
                         </div>
                         <div class="selected-size">
                             <p id="selectedSize">Selected Size: None</p>
-                            <button id="addToCartBtn" disabled>Add to Cart</button>
+                            <button id="addToCartBtn" disabled >Add to Cart</button>
+                            <!-- <button onclick="addToCart('Product 1', 10.00, 'https://via.placeholder.com/300x200')">Add to Cart</button> -->
+                            
                         </div>
                         <div class="go-back">
                             <button id="goBackBtn">Go Back</button>
@@ -73,6 +77,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

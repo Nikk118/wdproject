@@ -1,6 +1,8 @@
-body{
-	background: black;
+.blog{
+	width: 90%;
+	margin: auto;
 }
+
 .logo{
 	height: 50px;
 	width: 70px;
@@ -361,6 +363,7 @@ footer {
 .selected-size {
     text-align: center;
 }
+
 
 #addToCartBtn {
     padding: 10px 20px;

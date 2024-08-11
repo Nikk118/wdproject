@@ -8,7 +8,6 @@ if (isset($_SESSION['loggedin'])) {
 } 
 
 ?>
-
 <!doctype html>
 <html lang="en">
 
@@ -26,28 +25,9 @@ if (isset($_SESSION['loggedin'])) {
 
 <body>
 
-    <?php 
-        if($welcome){
-           echo' <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>welcome  </strong> you are logged in!
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>';
-        }
-    ?>
+    
     <?php require 'nav.php'?>
-    <div class="imgcont">
-        <div class="img1">
-            <a href=""><img class="mainimg" src="image/main.webp" alt=""></a>
-        </div>
-        <div class="img2">
-            <div class="sec1">
-                <a href=""><img class="simg" src="image/img1.webp" alt=""></a>
-            </div>
-            <div class="sec2">
-                <a href=""><img class="simg" src="image/img2.webp" alt=""></a>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="arrival">
         <h3 class="heading">New Arrivals</h3>
